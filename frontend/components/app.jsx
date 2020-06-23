@@ -10,6 +10,7 @@ import {
 import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
+import AuthRoute from '../util/route_util';
 
 const App = () => (
     <div>
@@ -21,6 +22,7 @@ const App = () => (
         </header>
         <Route path="/login" component={LoginFormContainer} />
         <Route path="/signup" component={SignupFormContainer} />
+        <Route exact path="/" component={MovieIndexContainer} />
     </div>
 );
 
